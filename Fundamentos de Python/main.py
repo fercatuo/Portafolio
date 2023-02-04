@@ -1,14 +1,26 @@
-'''
-Este archivo es el que reconocerá y ejecutará
-Para ejecutar por consola: python nombredelArcivo.py
+user_option = input('Piedra, papel o tijera => ')
+computer_option = 'piedra'
 
-'''
-print("Hola, esto es python")
-
-print("Hola soy Fer")
-
-#Python no acepta identación
-print(12 + 5)
-print(10 - 5)
-print(2 * 3)
-print(8 / 2)
+if user_option == computer_option:
+    print('Empate')
+elif user_option == 'piedra':
+    if computer_option == 'tijera':
+        print('Piedra gana a tijera')
+        print('User ganó')
+    else:
+        print('Papel gana a pidra')
+        print('Computer ganó')
+elif user_option == 'papel':
+    if computer_option == 'piedra':
+        print('papel le gana a pieddra')
+        print('User ganó')
+    else:
+        print('tijera le gana a papel')
+        print('computer ganó')
+elif user_option == 'tijera':
+    if computer_option == 'papel':
+        print('tijera le gana a piedra')
+        print('user ganó')
+    else:
+        print('piedra le gana a papel')
+        print('computer ganó')
